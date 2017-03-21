@@ -5,4 +5,4 @@
 Header Files for C.
 
 ## Header List
- - Arrays.h : 
+ - Arrays.h
