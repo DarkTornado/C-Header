@@ -1,6 +1,6 @@
 /*
 Arrays.h
-version 1.0
+version 1.1
 © 2017 Dark Tornado, All rights reserved.
 
 <Function List>
@@ -77,7 +77,7 @@ void isort(int* arr, int leng){
 }
 
 void ireverse(int* arr, int leng){
-    int* arr2 = (int*)malloc(4 * leng);
+    int* arr2 = (int*)malloc(sizeof(int) * leng);
     for (int n = 0; n < leng; n++)
         *(arr2 + n) = arr[n];
     for (int n = 0; n < leng; n++)
@@ -155,7 +155,7 @@ void lsort(long* arr, int leng){
 }
 
 void lreverse(long* arr, int leng){
-    long* arr2 = (long*)malloc(4 * leng);
+    long* arr2 = (long*)malloc(sizeof(long) * leng);
     for (int n = 0; n < leng; n++)
         *(arr2 + n) = arr[n];
     for (int n = 0; n < leng; n++)
@@ -233,7 +233,7 @@ void fsort(float* arr, int leng){
 }
 
 void freverse(float* arr, int leng){
-    float* arr2 = (float*)malloc(4 * leng);
+    float* arr2 = (float*)malloc(sizeof(float) * leng);
     for (int n = 0; n < leng; n++)
         *(arr2 + n) = arr[n];
     for (int n = 0; n < leng; n++)
@@ -311,7 +311,7 @@ void dsort(double* arr, int leng){
 }
 
 void dreverse(double* arr, int leng){
-    double* arr2 = (double*)malloc(4 * leng);
+    double* arr2 = (double*)malloc(sizeof(double) * leng);
     for (int n = 0; n < leng; n++)
         *(arr2 + n) = arr[n];
     for (int n = 0; n < leng; n++)
@@ -353,7 +353,4 @@ double dgetMin(double* arr, int leng){
     }
     return min;
 }
-
-
-
 
