@@ -6,3 +6,4 @@ Header Files for C.
 
 ## Header List
  - Arrays.h
+ - colortext.h
